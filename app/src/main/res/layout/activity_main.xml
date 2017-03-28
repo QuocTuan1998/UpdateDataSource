@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.updatedatasource.MainActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtThongTin"
+        android:text="Nhập Thông Tinh Sinh Viên :"
+        android:textSize="20dp"
+        android:background="#008000"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThongTin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNhapMa"
+        android:text="Mã : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThongTin"
+        android:layout_toRightOf="@+id/txtNhapMa"
+        android:id="@+id/txtMa"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMa"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNhapTen"
+        android:text="Tên : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMa"
+        android:layout_toRightOf="@id/txtNhapTen"
+        android:id="@+id/txtTen"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTen"
+        android:layout_marginTop="4dp"
+        android:id="@+id/txtGioiTinh"
+        android:text="Giới tính : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTen"
+        android:layout_toRightOf="@+id/txtGioiTinh"
+        android:id="@+id/chkGioiTinh"
+        android:text="Là Nữ"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkGioiTinh"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNhapNgaysinh"
+        android:text="Ngày sinh : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkGioiTinh"
+        android:layout_toRightOf="@+id/txtNhapNgaysinh"
+        android:id="@+id/txtNgaySinh"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkGioiTinh"
+        android:layout_toRightOf="@+id/txtNgaySinh"
+        android:id="@+id/btnChon"
+        android:text="..."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNgaySinh"
+        android:id="@+id/txtNhapNoiSinh"
+        android:text="Nơi sinh : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <AutoCompleteTextView
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNhapNgaysinh"
+        android:layout_toRightOf="@+id/txtNhapNoiSinh"
+        android:id="@+id/txtNoiSinh"
+        android:completionThreshold="1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNoiSinh"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/btnOk"
+        android:text="Nhập SV"
+        />
+    <TextView
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtThongTin"
+        android:id="@+id/txtDanhSach"
+        android:text="Danh sách sinh viên : "
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#000080"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtNoiSinh"
+        android:layout_below="@+id/txtDanhSach"
+        android:id="@+id/lvSinhVien"
+        >
+
+    </ListView>
+
+</RelativeLayout>
